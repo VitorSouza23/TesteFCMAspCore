@@ -23,8 +23,8 @@ jobs:
       run: dotnet build --configuration Release --no-restore
     - name: Publish
       run: dotnet publish
-    - name: Upload WebApp1 Build Artifact
+    - name: Upload Artifact
       uses: actions/upload-artifact@v2
       with:
-        name: WebApp1
-        path: /home/runner/work/TesteFCMAspCore/TesteFCMAspCore/src/TesteFCMAspCore/bin/Debug/netcoreapp3.1/publish/
+        name: TesteFCMAspCore
+        path: /home/runner/work/TesteFCMAspCore/TesteFCMAspCore/bin/Debug/netcoreapp3.1/publish/
